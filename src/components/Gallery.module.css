@@ -1,0 +1,35 @@
+/* Gallery.module.css */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50vh;
+  }
+  
+  .left {
+    background-color: transparent;
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  .content{
+    margin-top: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+    }
+
+  
+    .left {
+      display: none;
+    }
+  }
+  
